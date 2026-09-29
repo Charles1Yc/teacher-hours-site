@@ -1,0 +1,11 @@
+{
+  "project": "teacher-hours-web",
+  "config_version": 1,
+  "public_site": true,
+  "source_files": [],
+  "generated_files": [
+    "teachers.json",
+    "course-mapping.json",
+    "standard-week-template.json"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "config_version": 1,
+  "title": "教师标准周课时统计",
+  "teachers": [],
+  "default_population": "template",
+  "default_scope": "all",
+  "course_slots": 6,
+  "club_slots": 2
+}

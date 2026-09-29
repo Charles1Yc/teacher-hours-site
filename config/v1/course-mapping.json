@@ -1,0 +1,952 @@
+{
+  "config_version": 1,
+  "event_counting_rule": "one timetable cell at one teacher-weekday-period is one candidate event; labels do not multiply the event",
+  "session_rules": [
+    {
+      "scope_group": "international",
+      "weekdays": [
+        2,
+        4
+      ],
+      "period_codes": [
+        "period_9"
+      ],
+      "raw_labels": [
+        "雅思读写"
+      ],
+      "template_category_id": "teaching_lessons"
+    },
+    {
+      "scope_group": "international",
+      "weekdays": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "period_codes": [
+        "period_9"
+      ],
+      "template_category_id": "club_lessons"
+    },
+    {
+      "scope_group": "domestic",
+      "weekdays": [
+        3
+      ],
+      "period_codes": [
+        "period_6",
+        "period_7",
+        "period_8",
+        "period_9"
+      ],
+      "template_category_id": "club_lessons"
+    }
+  ],
+  "rules": [
+    {
+      "course_rule_id": "course_rule_001",
+      "raw_label": "AI影视制作",
+      "canonical_label": "AI影视制作",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_002",
+      "raw_label": "AI氛围编程",
+      "canonical_label": "AI氛围编程",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_003",
+      "raw_label": "AP  心理学",
+      "canonical_label": "AP  心理学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_004",
+      "raw_label": "AP 3D&Drawing",
+      "canonical_label": "AP 3D&Drawing",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_005",
+      "raw_label": "AP 宏观经济学",
+      "canonical_label": "AP 宏观经济学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_006",
+      "raw_label": "AP 微积分 BC",
+      "canonical_label": "AP 微积分 BC",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_007",
+      "raw_label": "AP 微积分入门",
+      "canonical_label": "AP 微积分入门",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_008",
+      "raw_label": "AP 微观经济学",
+      "canonical_label": "AP 微观经济学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_009",
+      "raw_label": "AP 物理1",
+      "canonical_label": "AP 物理1",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_010",
+      "raw_label": "AP 生物",
+      "canonical_label": "AP 生物",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_011",
+      "raw_label": "AP 统计学",
+      "canonical_label": "AP 统计学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_012",
+      "raw_label": "AP 计算机科学A",
+      "canonical_label": "AP 计算机科学A",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_013",
+      "raw_label": "G10 考训基础-听说",
+      "canonical_label": "G10 考训基础-听说",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_014",
+      "raw_label": "G10 考训基础-读写",
+      "canonical_label": "G10 考训基础-读写",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_015",
+      "raw_label": "G7 数学",
+      "canonical_label": "G7 数学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_016",
+      "raw_label": "G8 数学",
+      "canonical_label": "G8 数学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_017",
+      "raw_label": "G8 物理",
+      "canonical_label": "G8 物理",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_018",
+      "raw_label": "G9  考训预备-听说",
+      "canonical_label": "G9  考训预备-听说",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_019",
+      "raw_label": "G9 考训预备-读写",
+      "canonical_label": "G9 考训预备-读写",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_020",
+      "raw_label": "世界历史",
+      "canonical_label": "世界历史",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_021",
+      "raw_label": "世界历史与地理",
+      "canonical_label": "世界历史与地理",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_022",
+      "raw_label": "代数1",
+      "canonical_label": "代数1",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_023",
+      "raw_label": "代数2",
+      "canonical_label": "代数2",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_024",
+      "raw_label": "体育",
+      "canonical_label": "体育",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_025",
+      "raw_label": "初中体育",
+      "canonical_label": "初中体育",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_026",
+      "raw_label": "初中信息技术",
+      "canonical_label": "初中信息技术",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_027",
+      "raw_label": "初中历史",
+      "canonical_label": "初中历史",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_028",
+      "raw_label": "初中地理",
+      "canonical_label": "初中地理",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_029",
+      "raw_label": "初中地理-单",
+      "canonical_label": "初中地理",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_030",
+      "raw_label": "初中地理-双",
+      "canonical_label": "初中地理",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_031",
+      "raw_label": "初中外教课",
+      "canonical_label": "初中外教课",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_032",
+      "raw_label": "初中心理学",
+      "canonical_label": "初中心理学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_033",
+      "raw_label": "初中数学",
+      "canonical_label": "初中数学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_034",
+      "raw_label": "初中物理",
+      "canonical_label": "初中物理",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_035",
+      "raw_label": "初中班会",
+      "canonical_label": "初中班会",
+      "week_parity": "all",
+      "template_category_id": null,
+      "mapping_status": "pending_business_rule"
+    },
+    {
+      "course_rule_id": "course_rule_036",
+      "raw_label": "初中生物",
+      "canonical_label": "初中生物",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_037",
+      "raw_label": "初中生物-单",
+      "canonical_label": "初中生物",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_038",
+      "raw_label": "初中生物-双",
+      "canonical_label": "初中生物",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_039",
+      "raw_label": "初中美术",
+      "canonical_label": "初中美术",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_040",
+      "raw_label": "初中英语",
+      "canonical_label": "初中英语",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_041",
+      "raw_label": "初中语文",
+      "canonical_label": "初中语文",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_042",
+      "raw_label": "初中道德与法治",
+      "canonical_label": "初中道德与法治",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_043",
+      "raw_label": "初中音乐",
+      "canonical_label": "初中音乐",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_044",
+      "raw_label": "动画",
+      "canonical_label": "动画",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_045",
+      "raw_label": "化学",
+      "canonical_label": "化学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_046",
+      "raw_label": "历史",
+      "canonical_label": "历史",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_047",
+      "raw_label": "合唱",
+      "canonical_label": "合唱",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_048",
+      "raw_label": "商业与经济入门",
+      "canonical_label": "商业与经济入门",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_049",
+      "raw_label": "地理",
+      "canonical_label": "地理",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_050",
+      "raw_label": "地理-单",
+      "canonical_label": "地理",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_051",
+      "raw_label": "地理-双",
+      "canonical_label": "地理",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_052",
+      "raw_label": "大学预科数学",
+      "canonical_label": "大学预科数学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_053",
+      "raw_label": "学术英语听说",
+      "canonical_label": "学术英语听说",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_054",
+      "raw_label": "学术英语读写",
+      "canonical_label": "学术英语读写",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_055",
+      "raw_label": "工作室艺术 2D设计",
+      "canonical_label": "工作室艺术 2D设计",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_056",
+      "raw_label": "平面设计",
+      "canonical_label": "平面设计",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_057",
+      "raw_label": "微电影",
+      "canonical_label": "微电影",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_058",
+      "raw_label": "戏剧",
+      "canonical_label": "戏剧",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_059",
+      "raw_label": "戏剧表演",
+      "canonical_label": "戏剧表演",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_060",
+      "raw_label": "手工",
+      "canonical_label": "手工",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_061",
+      "raw_label": "托福听说",
+      "canonical_label": "托福听说",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_062",
+      "raw_label": "托福读写",
+      "canonical_label": "托福读写",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_063",
+      "raw_label": "政治",
+      "canonical_label": "政治",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_064",
+      "raw_label": "政治-单",
+      "canonical_label": "政治",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_065",
+      "raw_label": "政治-双",
+      "canonical_label": "政治",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_066",
+      "raw_label": "数字公民素养",
+      "canonical_label": "数字公民素养",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_067",
+      "raw_label": "数学",
+      "canonical_label": "数学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_068",
+      "raw_label": "日语",
+      "canonical_label": "日语",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_069",
+      "raw_label": "日语数学",
+      "canonical_label": "日语数学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_070",
+      "raw_label": "法语",
+      "canonical_label": "法语",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_071",
+      "raw_label": "演唱表演",
+      "canonical_label": "演唱表演",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_072",
+      "raw_label": "演讲辩论与模联",
+      "canonical_label": "演讲辩论与模联",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_073",
+      "raw_label": "物理",
+      "canonical_label": "物理",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_074",
+      "raw_label": "物理-单",
+      "canonical_label": "物理",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_075",
+      "raw_label": "物理-双",
+      "canonical_label": "物理",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_076",
+      "raw_label": "班会",
+      "canonical_label": "班会",
+      "week_parity": "all",
+      "template_category_id": null,
+      "mapping_status": "pending_business_rule"
+    },
+    {
+      "course_rule_id": "course_rule_077",
+      "raw_label": "生物",
+      "canonical_label": "生物",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_078",
+      "raw_label": "生物-单",
+      "canonical_label": "生物",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_079",
+      "raw_label": "生物-双",
+      "canonical_label": "生物",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_080",
+      "raw_label": "科学",
+      "canonical_label": "科学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_081",
+      "raw_label": "答疑",
+      "canonical_label": "答疑",
+      "week_parity": "all",
+      "template_category_id": null,
+      "mapping_status": "pending_business_rule"
+    },
+    {
+      "course_rule_id": "course_rule_082",
+      "raw_label": "素描",
+      "canonical_label": "素描",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_083",
+      "raw_label": "经济",
+      "canonical_label": "经济",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_084",
+      "raw_label": "绘画",
+      "canonical_label": "绘画",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_085",
+      "raw_label": "绘画与材料",
+      "canonical_label": "绘画与材料",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_086",
+      "raw_label": "统计学入门",
+      "canonical_label": "统计学入门",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_087",
+      "raw_label": "美术欣赏",
+      "canonical_label": "美术欣赏",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_088",
+      "raw_label": "自习",
+      "canonical_label": "自习",
+      "week_parity": "all",
+      "template_category_id": "study_lessons",
+      "mapping_status": "confirmed_rule"
+    },
+    {
+      "course_rule_id": "course_rule_089",
+      "raw_label": "艺术 I",
+      "canonical_label": "艺术 I",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_090",
+      "raw_label": "艺术作品集",
+      "canonical_label": "艺术作品集",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_091",
+      "raw_label": "英语",
+      "canonical_label": "英语",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_092",
+      "raw_label": "英语口语",
+      "canonical_label": "英语口语",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_093",
+      "raw_label": "英语强化",
+      "canonical_label": "英语强化",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_094",
+      "raw_label": "英语文学",
+      "canonical_label": "英语文学",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_095",
+      "raw_label": "英语语言艺术",
+      "canonical_label": "英语语言艺术",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_096",
+      "raw_label": "表演秀",
+      "canonical_label": "表演秀",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_097",
+      "raw_label": "计算机及AI入门",
+      "canonical_label": "计算机及AI入门",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_098",
+      "raw_label": "设计",
+      "canonical_label": "设计",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_099",
+      "raw_label": "设计思维&软件",
+      "canonical_label": "设计思维&软件",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_100",
+      "raw_label": "语文",
+      "canonical_label": "语文",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_101",
+      "raw_label": "赛达",
+      "canonical_label": "赛达",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_102",
+      "raw_label": "赛达（数学，阅读）",
+      "canonical_label": "赛达（数学，阅读）",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_103",
+      "raw_label": "道德与法治",
+      "canonical_label": "道德与法治",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_104",
+      "raw_label": "雅思听说",
+      "canonical_label": "雅思听说",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_105",
+      "raw_label": "雅思读写",
+      "canonical_label": "雅思读写",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_106",
+      "raw_label": "音乐",
+      "canonical_label": "音乐",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_107",
+      "raw_label": "音乐欣赏",
+      "canonical_label": "音乐欣赏",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_108",
+      "raw_label": "高中信息技术-单",
+      "canonical_label": "高中信息技术",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_109",
+      "raw_label": "高中信息技术-双",
+      "canonical_label": "高中信息技术",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_110",
+      "raw_label": "高中心理-单",
+      "canonical_label": "高中心理",
+      "week_parity": "odd",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_111",
+      "raw_label": "高中心理-双",
+      "canonical_label": "高中心理",
+      "week_parity": "even",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_112",
+      "raw_label": "高中日语",
+      "canonical_label": "高中日语",
+      "week_parity": "all",
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "provisional_default"
+    },
+    {
+      "course_rule_id": "course_rule_113",
+      "raw_label": "高中社团",
+      "canonical_label": "高中社团",
+      "week_parity": "all",
+      "template_category_id": "club_lessons",
+      "mapping_status": "confirmed_rule"
+    }
+  ]
+}
