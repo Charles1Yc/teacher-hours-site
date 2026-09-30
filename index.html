@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="在浏览器本地完成教师课表导入、核对和课时统计导出" />
     <title>教师课时统计</title>
-    <script type="module" crossorigin src="/teacher-hours-site/assets/index-vN4xaXcG.js"></script>
-    <link rel="stylesheet" crossorigin href="/teacher-hours-site/assets/index-DP1o_-1z.css">
+    <script type="module" crossorigin src="/teacher-hours-site/assets/index-Cl_msn6u.js"></script>
+    <link rel="stylesheet" crossorigin href="/teacher-hours-site/assets/index-9OsfCDp7.css">
   </head>
   <body>
     <header class="app-header">
       <div class="brand-block"><span class="brand-mark" aria-hidden="true">课</span><div><h1>教师课时统计</h1><p>数据准备、核对与导出</p></div></div>
-      <div class="privacy-badge"><span aria-hidden="true">✓</span><div><strong>数据仅在本浏览器处理</strong><small>不上传服务器，刷新或关闭页面后清除</small></div></div>
+      <div class="privacy-badge"><span aria-hidden="true">✓</span><div><strong>数据仅在本浏览器处理</strong><small>不上传服务器，原始资料刷新后清除；分类确认本地保留</small></div></div>
       <span id="database-name" class="session-name">本次临时会话</span>
     </header>
 
@@ -32,19 +32,18 @@
         <section class="panel workflow-panel template-library">
           <div class="panel-heading"><div><p class="step-label">模板下载</p><h2>按文件类型下载并填写</h2><p>下载后可以直接修改，再通过下方对应入口上传。月度导出使用系统内置底稿，不需要另行选择模板。</p></div></div>
           <div class="template-group-grid">
-            <article class="template-group"><h3>基础课表 · 必需</h3><a href="./templates/基础课表/课表模板.xlsx" download="国际部课表模板.xlsx">国际部课表模板</a><a href="./templates/基础课表/课表模板.xlsx" download="国内部课表模板.xlsx">国内部课表模板</a><p>两个入口使用同一格式，下载文件名用于识别所属学部。</p></article>
             <article class="template-group"><h3>教师名单 · 必需</h3><a href="./templates/名单与补充/教师名单导入模板.xlsx" download>教师名单导入模板</a><p>从“课时数收集表”的教师姓名列确定核算范围。</p></article>
-            <article class="template-group"><h3>早晚自习 · 可选</h3><a href="./templates/排班模板/国际部早晚自习排班表模板.xlsx" download>国际部早晚自习排班表模板</a><p>有实际排班时上传；未上传则不计入早晚自习。</p></article>
+            <article class="template-group"><h3>早晚自习 · 可选</h3><a href="./templates/排班模板/国际部早晚自习排班表模板.xlsx" download>国际部早晚自习排班表模板</a><p>有实际排班时上传；优先采用基础课表中的安排，补充表用于缺失的早晚自习。</p></article>
             <article class="template-group"><h3>补充课时 · 可选</h3><a href="./templates/名单与补充/教师课时补充表单模板.xlsx" download>教师课时补充表单模板</a><p>有补课、监考等额外记录时上传。</p></article>
           </div>
         </section>
 
         <section class="panel workflow-panel">
-          <div class="panel-heading split-heading"><div><p class="step-label">1. 上传基础数据</p><h2>基础课表与教师名单</h2><p>这两项即可生成标准周结果；设置统计月份后即可生成月度结果。各文件独立显示成功、失败、预览和删除操作。</p></div><span id="foundation-readiness" class="readiness-badge pending">等待上传</span></div>
+          <div class="panel-heading split-heading"><div><p class="step-label">1. 上传基础数据</p><h2>基础课表与教师名单</h2><p>上传后先核对课程种属；确认后可生成标准周，完成月份与调休设置后可生成月度结果。各文件独立显示成功、失败、预览和删除操作。</p></div><span id="foundation-readiness" class="readiness-badge pending">等待上传</span></div>
           <div class="upload-grid">
             <article class="upload-card">
-              <div class="upload-card-heading"><span class="upload-index">A</span><div><h3>导入基础课表 · 必需</h3><p>国际部与国内部使用同一模板，按文件名识别学部</p></div></div>
-              <label class="drop-zone"><span class="drop-title">选择或拖入课表文件</span><span>选择或拖入后自动解析；仅用于正式课程、自习、答疑、班会和社团等课表数据</span><input id="excel-files" type="file" accept=".xlsx,.xls" multiple /></label>
+              <div class="upload-card-heading"><span class="upload-index">A</span><div><h3>导入基础课表 · 必需</h3><p>直接上传学校系统导出的国际部、国内部课表，按文件名识别学部</p></div></div>
+              <label class="drop-zone"><span class="drop-title">选择或拖入课表文件</span><span>选择或拖入后自动解析；读取课程种属及课表内的早晚自习安排</span><input id="excel-files" type="file" accept=".xlsx,.xls" multiple /></label>
               <div id="timetable-import-list" class="import-file-list"></div>
             </article>
             <article class="upload-card roster-upload-card">
@@ -57,7 +56,7 @@
         </section>
 
         <section class="panel workflow-panel">
-          <div class="panel-heading"><div><p class="step-label">2. 按需补充</p><h2>早晚自习与额外课时</h2><p>这两项均可跳过，未上传时相应课时按 0 计。早晚自习排班计入标准周和月度，按日期填写的补充课时计入对应月份。</p></div></div>
+          <div class="panel-heading"><div><p class="step-label">2. 按需补充</p><h2>早晚自习与额外课时</h2><p>基础课表已有早晚自习时优先采用，补充排班仅补缺，已有同教师、学部、星期及节次安排时提示冲突；额外增减按日期记录。早晚自习排班计入标准周和月度，按日期填写的补充课时计入对应月份。</p></div></div>
           <div class="upload-grid">
             <article class="upload-card">
               <div class="upload-card-heading"><span class="upload-index">C</span><div><h3>导入早晚自习 · 可选</h3><p>人员、星期与次数采用实际排班</p></div></div>
@@ -65,8 +64,8 @@
               <div id="duty-import-list" class="import-file-list"></div>
             </article>
             <article class="upload-card">
-              <div class="upload-card-heading"><span class="upload-index">D</span><div><h3>导入补充课时 · 可选</h3><p>补课、监考、送考与活动等额外记录</p></div></div>
-              <label class="drop-zone"><span class="drop-title">选择或拖入补充课时 Excel</span><span>支持多文件；自动解析数据工作表并加入16项课时统计</span><input id="extra-hours-file" type="file" accept=".xlsx,.xls" multiple /></label>
+              <div class="upload-card-heading"><span class="upload-index">D</span><div><h3>导入补充课时 · 可选</h3><p>调课、补课、监考、游园、送考与活动等增减记录</p></div></div>
+              <label class="drop-zone"><span class="drop-title">选择或拖入补充课时 Excel</span><span>支持多文件；数量可正可负，扣减须写说明，按发生日期加入最终统计</span><input id="extra-hours-file" type="file" accept=".xlsx,.xls" multiple /></label>
               <p id="extra-hours-summary" class="maintenance-note">尚未导入日期级补充数据。</p><div id="extra-hours-import-list" class="import-file-list"></div>
             </article>
           </div>
@@ -78,11 +77,17 @@
           <details class="warnings-box"><summary>查看结构警告</summary><div id="preview-warnings"></div></details>
         </section>
 
+        <section class="panel">
+          <div class="panel-heading"><div><h2>课程与社团种属确认</h2><p id="classification-status"></p></div></div>
+          <div class="search-row classification-controls"><input id="classification-search" type="search" placeholder="搜索教师、课程或文件" /><label><input id="classification-show-all" type="checkbox" />显示全部，修改已确认分类</label><button id="classification-save" class="button primary" type="button">保存分类确认</button></div>
+          <div class="table-wrap tall-table"><table><thead><tr><th>教师</th><th>学部</th><th>星期与节次</th><th>课程</th><th>来源</th><th>实际种属</th></tr></thead><tbody id="classification-body"></tbody></table></div>
+        </section>
+
         <section class="panel workflow-panel">
-          <div class="panel-heading split-heading"><div><p class="step-label">3. 设置统计月份</p><h2>第一周、法定日期、调休与返校晚自习</h2><p>先指定本学期第一周星期一。补班日分别指定白天课程、国际社团和晚自习安排；晚自习人员只读取可选的 Part C 排班表。</p></div><span id="monthly-readiness" class="readiness-badge pending">等待配置</span></div>
+          <div class="panel-heading split-heading"><div><p class="step-label">3. 设置统计月份</p><h2>第一周、法定日期、调休与返校晚自习</h2><p>先指定本学期第一周星期一。补班日分别指定白天课程、国际社团和晚自习安排；晚自习采用基础课表或补充排班中的实际人员与起止时间。</p></div><span id="monthly-readiness" class="readiness-badge pending">等待配置</span></div>
           <div class="monthly-month-control"><label><span>统计月份</span><input id="monthly-month" type="month" min="2026-01" max="2027-12" value="2026-10" /></label><label><span>第一周星期一</span><input id="semester-week-one-start" type="date" value="2026-08-31" required /></label><button id="monthly-calculate" class="button secondary" type="button">重新判定日期</button></div>
           <div id="monthly-source" class="readonly-hint"></div><div id="monthly-warning" class="monthly-warning" hidden></div>
-          <section id="makeup-config-panel" class="subpanel" hidden><div class="panel-heading"><div><p class="step-label">调休补班</p><h3>补班日执行安排</h3><p>白天课程只选择周一至周五；国际社团只选择周一至周四或无社团；晚自习按可选的 Part C 对应星期或“周日/返校”列读取。</p></div></div><div class="table-wrap"><table><thead><tr><th>补班日期</th><th>自然星期</th><th>白天课程按</th><th>国际社团按</th><th>晚自习按</th><th>状态</th></tr></thead><tbody id="makeup-config-body"></tbody></table></div></section>
+          <section id="makeup-config-panel" class="subpanel" hidden><div class="panel-heading"><div><p class="step-label">调休补班</p><h3>补班日执行安排</h3><p>白天课程只选择周一至周五；国际社团只选择周一至周四或无社团；晚自习按实际排班的对应星期或返校列读取。</p></div></div><div class="table-wrap"><table><thead><tr><th>补班日期</th><th>自然星期</th><th>白天课程按</th><th>国际社团按</th><th>晚自习按</th><th>状态</th></tr></thead><tbody id="makeup-config-body"></tbody></table></div></section>
           <section id="return-config-panel" class="subpanel" hidden><div class="panel-heading"><div><p class="step-label">返校晚自习</p><h3>确认返校前晚自习日期</h3><p>系统列出“非工作日之后紧接工作日”的候选日期。</p></div></div><div id="return-evening-list" class="return-evening-list"></div></section>
           <section id="monthly-results-panel" class="subpanel results-subpanel" hidden><div class="panel-heading"><div><p class="step-label">日期判定结果</p><h3 id="monthly-results-title">月度工作次数</h3><p id="monthly-results-basis"></p></div></div><h4 class="monthly-section-title">周一至周五课表执行天数</h4><div id="monthly-workday-cards" class="monthly-count-grid workday-count-grid"></div><h4 class="monthly-section-title">国际社团执行次数</h4><div id="monthly-club-cards" class="monthly-count-grid club-count-grid"></div><h4 class="monthly-section-title">晚自习次数</h4><div id="monthly-evening-cards" class="monthly-count-grid evening-count-grid"></div><details class="monthly-day-details"><summary>查看全部日期判定明细</summary><div class="table-wrap"><table><thead><tr><th>日期</th><th>自然星期</th><th>校周</th><th>单双周</th><th>法定状态</th><th>课程按</th><th>国际社团按</th><th>晚自习按</th></tr></thead><tbody id="monthly-day-body"></tbody></table></div></details></section>
         </section>
@@ -102,7 +107,7 @@
         <div class="module-intro export-intro"><div><p class="step-label">结果导出</p><h2>核对与导出</h2><p>标准周与月度统计分别检查生成条件；其中一个未完成，不影响查看另一个结果。</p></div><button id="back-to-data" class="button secondary" type="button">← 返回修改数据</button></div>
         <section class="summary-bar" aria-label="本次统计摘要"><article><span>统计月份</span><strong id="export-summary-month">—</strong></article><article><span>统计范围</span><strong id="export-summary-roster">0 位教师</strong></article><article><span>固定课时事件</span><strong id="export-summary-sessions">0 条</strong></article><article><span>日期级补充</span><strong id="export-summary-extra">0 条</strong></article></section>
         <div class="export-grid">
-          <article class="panel export-card"><div class="export-icon" aria-hidden="true">周</div><p class="step-label">标准周</p><h2>教师标准周课时</h2><p>只需基础课表与教师名单即可生成；早晚自习排班上传后加入标准周，按日期填写的补充课时只计入对应月份。</p><div id="standard-export-readiness" class="export-readiness pending">等待基础课表与教师名单</div><button id="export-standard-week" class="button primary block" type="button">导出标准周确认表</button><details class="preview-details"><summary>预览教师标准周结果</summary><div class="filter-grid"><label><span>教师范围</span><select id="standard-week-population"><option value="template">参考核算名单</option><option value="all">全部已导入教师</option></select></label><label><span>任务范围</span><select id="standard-week-scope"><option value="all">国际部与国内部</option><option value="international">仅国际部</option><option value="domestic">仅国内部</option></select></label><label class="filter-search"><span>教师查询</span><input id="standard-week-search" type="search" placeholder="输入教师姓名" /></label></div><p id="standard-week-empty" class="empty-message">请先上传基础课表与教师名单。</p><div class="table-wrap tall-table"><table class="standard-week-table category-summary-table"><thead><tr><th>教师</th><th>所属学部</th><th>授课课时<br>(节)</th><th>艺体训练课<br>(节)</th><th>自习（含早自习）<br>(节)</th><th>社团课<br>(节)</th><th>晚自习-教师岗<br>(分钟)</th><th>晚自习-非教师岗<br>(分钟)</th><th>晚自习-法定假日<br>(分钟)</th><th>补课-周末<br>(节)</th><th>补课-法定节假日<br>(节)</th><th>补课-寒暑假<br>(节)</th><th>工作日监考<br>(分钟)</th><th>周末监考-教师岗<br>(分钟)</th><th>周末监考-非教师岗<br>(次)</th><th>游园监考<br>(次)</th><th>送考补贴<br>(日)</th><th>活动补贴<br>(日)</th><th>确认状态</th><th>查看</th></tr></thead><tbody id="standard-week-body"></tbody></table></div></details></article>
+          <article class="panel export-card"><div class="export-icon" aria-hidden="true">周</div><p class="step-label">标准周</p><h2>教师标准周课时</h2><p>完成基础课表、教师名单及种属确认后可生成；早晚自习排班上传后加入标准周，按日期填写的补充课时只计入对应月份。</p><div id="standard-export-readiness" class="export-readiness pending">等待基础课表与教师名单</div><button id="export-standard-week" class="button primary block" type="button">导出标准周确认表</button><details class="preview-details"><summary>预览教师标准周结果</summary><div class="filter-grid"><label><span>教师范围</span><select id="standard-week-population"><option value="template">参考核算名单</option><option value="all">全部已导入教师</option></select></label><label><span>任务范围</span><select id="standard-week-scope"><option value="all">国际部与国内部</option><option value="international">仅国际部</option><option value="domestic">仅国内部</option></select></label><label><span>统计周次</span><select id="standard-week-parity"><option value="odd">单周实际课次</option><option value="even">双周实际课次</option></select></label><label class="filter-search"><span>教师查询</span><input id="standard-week-search" type="search" placeholder="输入教师姓名" /></label></div><p id="standard-week-empty" class="empty-message">请先上传基础课表与教师名单。</p><div class="table-wrap tall-table"><table class="standard-week-table category-summary-table"><thead><tr><th>教师</th><th>所属学部</th><th>授课课时<br>(节)</th><th>艺体训练课<br>(节)</th><th>自习（含早自习）<br>(节)</th><th>社团课<br>(节)</th><th>晚自习-教师岗<br>(分钟)</th><th>晚自习-非教师岗<br>(分钟)</th><th>晚自习-法定假日<br>(分钟)</th><th>补课-周末<br>(节)</th><th>补课-法定节假日<br>(节)</th><th>补课-寒暑假<br>(节)</th><th>工作日监考<br>(分钟)</th><th>周末监考-教师岗<br>(分钟)</th><th>周末监考-非教师岗<br>(次)</th><th>游园监考<br>(次)</th><th>送考补贴<br>(日)</th><th>活动补贴<br>(日)</th><th>确认状态</th><th>查看</th></tr></thead><tbody id="standard-week-body"></tbody></table></div></details></article>
           <article class="panel export-card"><div class="export-icon" aria-hidden="true">月</div><p class="step-label">月度统计</p><h2 id="monthly-export-card-title">国际部月度课时</h2><p>综合固定课表、实际单双周、法定日期、调休安排、晚自习和日期级补充记录。导出使用系统内置的《导出月度课时模板.xlsx》。</p><div id="monthly-export-readiness" class="export-readiness pending">等待月份配置</div><div class="maintenance-note">无需上传导出模板；系统按当前核算名单填写“课时数收集表”，保留模板中的其他工作表。</div><button id="export-monthly-sheet1" class="button primary block" type="button">计算并导出月度课时</button><p id="monthly-export-summary" class="maintenance-note">完成月份配置后可以直接生成。</p></article>
         </div>
         <section id="weekly-detail-panel" class="panel confirmation-panel" hidden><div class="panel-heading split-heading"><div><p class="step-label">只读明细</p><h2 id="weekly-detail-teacher-name">教师标准周明细</h2><p id="weekly-detail-basis"></p></div><button id="close-weekly-detail" class="button secondary" type="button">关闭</button></div><div class="table-wrap"><table class="confirmation-table"><thead><tr><th>来源</th><th>类别</th><th>课程或任务</th><th>单双周</th><th>基础数量</th><th>人工增减</th><th>确认数量</th><th>单位</th><th>说明</th></tr></thead><tbody id="weekly-detail-body"></tbody></table></div></section>

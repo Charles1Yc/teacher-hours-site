@@ -15,32 +15,6 @@
         "雅思读写"
       ],
       "template_category_id": "teaching_lessons"
-    },
-    {
-      "scope_group": "international",
-      "weekdays": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "period_codes": [
-        "period_9"
-      ],
-      "template_category_id": "club_lessons"
-    },
-    {
-      "scope_group": "domestic",
-      "weekdays": [
-        3
-      ],
-      "period_codes": [
-        "period_6",
-        "period_7",
-        "period_8",
-        "period_9"
-      ],
-      "template_category_id": "club_lessons"
     }
   ],
   "rules": [
@@ -321,8 +295,8 @@
       "raw_label": "初中班会",
       "canonical_label": "初中班会",
       "week_parity": "all",
-      "template_category_id": null,
-      "mapping_status": "pending_business_rule"
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "confirmed_rule"
     },
     {
       "course_rule_id": "course_rule_036",
@@ -649,8 +623,8 @@
       "raw_label": "班会",
       "canonical_label": "班会",
       "week_parity": "all",
-      "template_category_id": null,
-      "mapping_status": "pending_business_rule"
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "confirmed_rule"
     },
     {
       "course_rule_id": "course_rule_077",
@@ -689,8 +663,8 @@
       "raw_label": "答疑",
       "canonical_label": "答疑",
       "week_parity": "all",
-      "template_category_id": null,
-      "mapping_status": "pending_business_rule"
+      "template_category_id": "teaching_lessons",
+      "mapping_status": "confirmed_rule"
     },
     {
       "course_rule_id": "course_rule_082",
