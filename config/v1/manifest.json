@@ -6,6 +6,7 @@
   "generated_files": [
     "teachers.json",
     "course-mapping.json",
-    "standard-week-template.json"
+    "standard-week-template.json",
+    "calendar-2026-fall.json"
   ]
 }
