@@ -719,7 +719,7 @@
       "raw_label": "自习",
       "canonical_label": "自习",
       "week_parity": "all",
-      "template_category_id": "study_lessons",
+      "template_category_id": "evening_teacher_minutes",
       "mapping_status": "confirmed_rule"
     },
     {
