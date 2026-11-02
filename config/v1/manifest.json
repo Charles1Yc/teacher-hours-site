@@ -4,6 +4,8 @@
   "public_site": true,
   "source_files": [],
   "generated_files": [
+    "official-calendars.json",
+    "accounting-rules.json",
     "teachers.json",
     "course-mapping.json",
     "standard-week-template.json"
